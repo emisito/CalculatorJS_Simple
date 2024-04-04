@@ -12,7 +12,7 @@ Este proyecto es una calculadora simple y divertida desarrollada en JavaScript. 
 
 Foto de ejemlo a continuacón:
 
-<p>
+<p align="center">
   <img src="ProyectoCalculadora/examples/CalculatorExample.png" alt="Texto alternativo" width="320"/>
 </p>
 
