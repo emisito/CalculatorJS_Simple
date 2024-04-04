@@ -1,0 +1,142 @@
+body {
+    background: url(img/outer.gif) no-repeat;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0%;
+}
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  .silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.sixtyfour {
+  font-family: "Sixtyfour", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+}
+
+.container {
+    text-align: center;
+    padding: 3px;
+}
+
+.bk-calc {
+    background: url(img/pixil-frame-0.png);
+    width: 100%;
+    height: auto;
+}
+
+.calc {
+    padding: 5px;
+}
+
+.int{
+    margin-bottom: 12px;
+}
+
+input {
+    font-family: "Silkscreen", sans-serif;
+    text-align: right;
+    font-size: 34px;
+    background-color: transparent;
+    color: white;
+    border: 0px solid transparent;
+    outline: none;
+}
+
+.titulo{
+    font-family: "Sixtyfour", sans-serif;
+    color: white;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo img{
+    max-width: 30px;
+    vertical-align: middle;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tecla{
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.special-tecla{
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.tecla :hover{
+    background-color:#F8F8FF;
+    opacity: 0.9;
+}
+
+button{
+    font-family: "Silkscreen", sans-serif;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    border: 0px;
+}
+
+.special-button {
+    background-color: white;
+    width: 140px;
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    border: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+.bk-blue{
+    background-color:#a5d3f1;
+}
+
+.bk-orange{
+    background-color: #ffdd45;
+}
+
+.bk-openwhite{
+    background-color: #F8F8FF;
+}
+
+#datetime {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 18px;
+    color: #F8F8FF;
+}

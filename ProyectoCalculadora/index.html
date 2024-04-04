@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/dd9h88u-d384c96c-b1e3-44d7-b639-88946a92cb2e.png">
+    <link rel="stylesheet" href="estilo.css">
+    <title>|| Emanuel Hosu || Outers Emis Calc</title>
+</head>
+<body onload="tituloAnimado(true)">
+    <div id="datetime"></div>
+    <div class="container">
+        <div class="bk-calc">
+            <div class="calc">
+                <form name="calc">
+                    <div class="int">
+                        <div class="titulo">
+                            <b><img src="img/dd9h88u-d384c96c-b1e3-44d7-b639-88946a92cb2e.png" alt=""> Outer Emis Calc</b>
+                        </div>
+                        <input type="text" style="width: 360px; height: 50px" size="32" name="ans" value="" id="reciver" autocomplete="off">
+                    </div>
+                    <div class="numeritos" id="btn">
+                        <div class="row">
+                            <div class="tecla">
+                                <button type="button" onclick="elevadoADos()" class="bk-blue">x<sup>2</sup></button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" onclick="elevadoAY()" class="bk-blue">x<sup>y</sup></button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" onclick="factorial()" class="bk-blue" id="operador">x!</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button"  onclick="raizCuadrada()" class="bk-blue" id="operador">√</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" onclick="raizCuadrada3()" class="bk-blue" id="operador">√<sup>3</sup></button>
+                            </div>
+                        </div>
+                        <!--CAMBIO CAMBIO CAMBIO CAMBIO CAMBIO-->
+                        <div class="row">
+                            <div class="tecla">
+                                <button type="button" class="bk-blue" onclick="sin()" id="operador">sin</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" onclick="cos()" class="bk-blue" id="numero">cos</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" onclick="tan()" class="bk-blue" id="numero">tan</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" onclick="porcentaje()" class="bk-blue" id="operador">%</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" onclick="document.calc.ans.value+='3.14159265359'" class="bk-blue" id="operador">π</button>
+                            </div>
+                        </div>
+                        <!--CAMBIO CAMBIO CAMBIO CAMBIO CAMBIO-->
+                        <div class="row">
+                            <div class="tecla">
+                                <button type="button" value="7" onclick="document.calc.ans.value+='7'" class="bk-openwhite" id="numero">7</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="8" onclick="document.calc.ans.value+='8'" class="bk-openwhite" id="numero">8</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="9" onclick="document.calc.ans.value+='9'" class="bk-openwhite" id="numero">9</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="C" onclick="borrarUltimoCaracter()" class="bk-orange" id="operador">C</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="CA" onclick="limpiarTodo()" class="bk-orange" id="operador">AC</button>
+                            </div>
+                        </div>
+                        <!--CAMBIO CAMBIO CAMBIO CAMBIO CAMBIO-->
+                        <div class="row">
+                            <div class="tecla">
+                                <button type="button" value="4" onclick="document.calc.ans.value+='4'" class="bk-openwhite" id="numero">4</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="5" onclick="document.calc.ans.value+='5'" class="bk-openwhite" id="numero">5</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="6" onclick="document.calc.ans.value+='6'" class="bk-openwhite" id="numero">6</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="*" onclick="multiplicar()" class="bk-orange" id="operador">x</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="/" onclick="dividir()"class="bk-orange" id="operador">/</button>
+                            </div>
+                        </div>
+                        <!--CAMBIO CAMBIO CAMBIO CAMBIO CAMBIO-->
+                        <div class="row">
+                            <div class="tecla">
+                                <button type="button" value="1" onclick="document.calc.ans.value+='1'" class="bk-openwhite" id="operador">1</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="2" onclick="document.calc.ans.value+='2'" class="bk-openwhite" id="numero">2</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="3" onclick="document.calc.ans.value+='3'" class="bk-openwhite" id="operador">3</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="+" onclick="suma()" class="bk-orange" id="operador">+</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="-" onclick="resta()" class="bk-orange">-</button>
+                            </div>
+                        </div>
+                        <!--CAMBIO CAMBIO CAMBIO CAMBIO CAMBIO-->
+                        <div class="row">
+                            <div class="special-tecla">
+                                <button type="button" value="0" onclick="document.calc.ans.value+='0'" class="bk-openwhite special-button" id="operador">0</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="." onclick="document.calc.ans.value+='.'" class="bk-openwhite" id="operador">.</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="M+" onclick="mostrarMemoria()" class="bk-orange" id="operador">M+</button>
+                            </div>
+                            <div class="tecla">
+                                <button type="button" value="=" onclick="document.calc.ans.value=eval(document.calc.ans.value), almacenarMemoria()" class="bk-orange">=</button>
+                            </div>
+                        </div>
+                        <!--CAMBIO CAMBIO CAMBIO CAMBIO CAMBIO-->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>  
+<script src="calculadora.js"></script>
+</body>
+</html>
