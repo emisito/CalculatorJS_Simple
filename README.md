@@ -12,6 +12,6 @@ Este proyecto es una calculadora simple y divertida desarrollada en JavaScript. 
 
 Foto de ejemlo a continuacón:
 
-![Calculadora JavaScript](ProyectoCalculadora/examples/CalculatorExample.png)
+<img src="ProyectoCalculadora/examples/CalculatorExample.png" alt="Texto alternativo" width="200"/>
 
 ¡Únete a nosotros y disfruta de la simplicidad y diversión de esta calculadora de JavaScript!
